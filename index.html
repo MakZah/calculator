@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calculator_the_best</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator" aria-label="Калькулятор">
+    <div class="heading"><div><span class="eyebrow">CALCULATOR THE BEST</span><h1>Калькулятор<span>.</span></h1></div><span class="badge">● онлайн</span></div>
+    <p class="intro">Считайте вместе с вашим новым помощником!</p>
+    <div class="fun-controls"><button id="sound-toggle" class="toggle" aria-pressed="true">🔊 Звук: вкл</button><button id="buddy-toggle" class="toggle" aria-pressed="true">👾 Чудик: вкл</button></div>
+    <div class="playground" id="playground" aria-label="Чудик бегает и веселится"><div class="buddy" id="buddy" aria-hidden="true"><span class="buddy-face">◕‿◕</span><span class="feet">⌁ ⌁</span></div><span class="speech" id="speech">Я тут главный по цифрам!</span></div>
+    <div class="screen" aria-live="polite"><div id="expression">&nbsp;</div><div id="display">0</div></div>
+    <div class="keys">
+      <button class="utility" data-action="clear">AC</button><button class="utility" data-action="back" aria-label="Удалить последний символ">⌫</button><button class="utility" data-action="percent">%</button><button class="operator" data-op="/">÷</button>
+      <button data-number="7">7</button><button data-number="8">8</button><button data-number="9">9</button><button class="operator" data-op="*">×</button>
+      <button data-number="4">4</button><button data-number="5">5</button><button data-number="6">6</button><button class="operator" data-op="-">−</button>
+      <button data-number="1">1</button><button data-number="2">2</button><button data-number="3">3</button><button class="operator" data-op="+">+</button>
+      <button class="zero" data-number="0">0</button><button data-action="decimal">,</button><button class="equals" data-action="equals">=</button>
+    </div>
+    <p class="hint">Работает и с клавиатурой · Enter — результат</p>
+  </main>
+</body>
+</html>
